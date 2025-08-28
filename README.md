@@ -6,6 +6,7 @@ Este Repositório contém as soluções para os exercícios da plataforma [Beecr
 
 - 📝Lista I - Introdução a linguagem de programação ([Ver Resolução](./beecrowd/lista1-introducao))
 - 📝Lista II - Condicionais ([Ver Resolução](./beecrowd/lista2-condicionais))
+- 📝Lista III - Condicionais ([Ver Resolução](./beecrowd/lista3-repeticao))
 
 ## 👨‍💻 Como Compilar e Executar
 
