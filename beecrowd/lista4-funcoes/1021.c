@@ -1,28 +1,30 @@
 #include <stdio.h>
+#include <math.h>
+
 
 int main(){
-    // void calcularNotas(int value){
-    //     int notas001, notas002, notas005, notas010, notas020, notas050, notas100;
-    //     double moedas001, moedas005, moedas010, moedas025, moedas050, moedas100;
+    double number;
+    int value;
+    scanf("%lf", &number);
+    
+    value = (int)round(number * 100);
 
-    //     notas001 = 
+    int notas[] = {10000, 5000, 2000, 1000, 500, 200};
+    int moedas[] = {100, 50, 25, 10, 5, 1};
 
-    // }
+    printf("NOTAS:\n");
+    for (int i = 0; i < 6; i++) {
+        int qtd = value / notas[i];
+        value %= notas[i];
+        printf("%d nota(s) de R$ %.2f\n", qtd, notas[i] / 100.0);
+    }
 
-    int parteInteira, parteDecimal;
-    double numero;
-
-    scanf("%lf", &numero);
-
-    parteInteira = (int)numero;
-    parteDecimal = (int)((numero - parteInteira) * 100);
-
-    printf("%d\n", parteDecimal);
-
-    // int calcMoney(int value, int divisor){
-    //     int result;
-
-    // }
+    printf("MOEDAS:\n");
+    for (int i = 0; i < 6; i++) {
+        int qtd = value / moedas[i];
+        value %= moedas[i];
+        printf("%d moeda(s) de R$ %.2f\n", qtd, moedas[i] / 100.0);
+    }
 
     return 0;
 }
